@@ -124,7 +124,7 @@
         <div class="col-md-7">
             <h2>${product.productName}</h2>
             <p>- Sản phẩm sở hữu cho bản thân mình một loại công thức đặc biệt đã được nghiên cứu và kiểm chứng tại
-                Thái Lan trong suốt nhiều năm dài.
+                Thái Lan trong suốt nhiều năm dài
             </p>
             <p>- Công thức này là sự tổng hợp của 3 nhóm Omega 3-6-9. Đây là 3 nhóm Omega mà cơ thể của cún cưng
                 không thể tự tổng hợp, cũng như không thể được đưa vào từ các loại thực phẩm thông thường.</p>
