@@ -1,0 +1,29 @@
+SMAP
+admmin_jsp.java
+JSP
+*S JSP
+*F
++ 0 admmin.jsp
+admmin.jsp
++ 1 header.jsp
+include/header.jsp
++ 2 admin-form.jsp
+include/admin-form.jsp
++ 3 footer.jsp
+include/footer.jsp
+*L
+5,4:61
+5#1,99:64
+103:810,8
+104,2:818
+105,2:165
+106:838,8
+107:846
+108:847,3
+109,7:850
+115,5:169
+8#0:173
+5#2,523:174
+9#0:697
+5#3,95:698
+*E
