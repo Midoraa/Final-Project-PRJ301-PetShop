@@ -119,10 +119,10 @@
 <div class="container-fluid">
     <div class="container d-flex">
         <div class="col-md-5">
-            <img class="w-100" src="img/product-1.png" alt="">
+            <img class="w-100" src="img/Food/${product.productId}.png" alt="">
         </div>
         <div class="col-md-7">
-            <h2>RELX Waka Smash Aloe Grape 6000 Hơi - Vape Pod Dùng 1 Lần Sạc Được</h2>
+            <h2>${product.productName}</h2>
             <p>- Sản phẩm sở hữu cho bản thân mình một loại công thức đặc biệt đã được nghiên cứu và kiểm chứng tại
                 Thái Lan trong suốt nhiều năm dài.
             </p>
@@ -133,7 +133,7 @@
             <h6>Thương hiệu: <a href="">Rlex</a></h6>
             <div class="d-flex">
                 <h4 class="mb-3 pb-3">đ</h4>
-                <h1>260.000</h1>
+                <h1>${product.productPrice}</h1>
             </div>
             <div class="d-flex">
                 <h6 class="align-self-center mb-0">Đánh giá sản phẩm: </h6>
