@@ -4,6 +4,7 @@
     Author     : Admin
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 
@@ -119,7 +120,9 @@
 <div class="container-fluid">
     <div class="container d-flex">
         <div class="col-md-5">
-            <img class="w-100" src="img/Food/${product.productId}.png" alt="">
+                <img class="w-100" src="img/Pet/${product.productId}.jpg" alt="">
+                <img class="w-100" src="img/Food/${product.productId}.png" alt="">
+
         </div>
         <div class="col-md-7">
             <h2>${product.productName}</h2>
@@ -162,18 +165,20 @@
                 <div>
                     <div class="shopee-input-quantity">
                         <input type="button" class="sub-sl shopee-button-outline" title="Bớt"
-                               onclick="var qty_el = document.getElementById('qty'); var qty = qty_el.value; if (!isNaN(qty))
-                                            qty_el.value--;
-                                        return false;">
+                               onclick="var qty_el = document.getElementById('qty');
+                                       var qty = qty_el.value;
+                                       if (!isNaN(qty))
+                                           qty_el.value--;
+                                       return false;">
 
                         <input aria-label="Number" name="quantity" id="qty" type="text" size="1"
                                class="soluong_12 shopee-button-outline shopee-button-outline-mid" value="1">
                         <input type="button" class="add-sl shopee-button-outline" title="Thêm"
                                onclick="var qty_el = document.getElementById('qty');
-                                        var qty = qty_el.value;
-                                        if (!isNaN(qty))
-                                            qty_el.value++;
-                                        return false;">
+                                       var qty = qty_el.value;
+                                       if (!isNaN(qty))
+                                           qty_el.value++;
+                                       return false;">
                     </div>
                 </div>
                 <div class="buttons">
