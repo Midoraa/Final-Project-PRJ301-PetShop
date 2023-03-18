@@ -121,11 +121,15 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <form action=\"login\" method=\"post\" class=\"login\" >\r\n");
       out.write("                    <label class=\"khung-user\">\r\n");
       out.write("                        <div class=\"\"></div>\r\n");
-      out.write("                        <input name=\"username\" class=\"username\" type=\"text\" autocomplete=\"on\" placeholder=\"User name\" />\r\n");
+      out.write("                        <input name=\"username\" class=\"username\" type=\"text\" autocomplete=\"on\" placeholder=\"User name\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${cookie.username.value}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" />\r\n");
       out.write("                    </label>\r\n");
       out.write("                    <label class=\"khung-pass\">\r\n");
       out.write("                        <div class=\"\"></div>\r\n");
-      out.write("                        <input name=\"pass\" class=\"password\" type=\"password\" autocomplete=\"off\" placeholder=\"Password\" />\r\n");
+      out.write("                        <input name=\"password\" class=\"password\" type=\"password\" autocomplete=\"off\" placeholder=\"Password\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${cookie.password.value}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" />\r\n");
       out.write("                    </label>\r\n");
       out.write("                    <label>\r\n");
       out.write("                        <input type=\"submit\" value=\"Login\" class=\"login-button\">\r\n");
