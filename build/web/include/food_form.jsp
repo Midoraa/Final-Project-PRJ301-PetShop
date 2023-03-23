@@ -23,10 +23,10 @@
                     <h6 class="text-primary text-uppercase">Pet's Food</h6>
                     <h1 class="display-5 text-uppercase mb-0">PRODUCTS FOR YOUR BEST FRIENDS</h1>
                 </div>
-                <div class="row g-5 d-flex flex-row">
+                <div class="row g-5 d-flex flex-row owl-carousel product-carousel">
                     <c:forEach var="food" items="${listFood}">
-                        <div class="pb-5 mb-4 col-md-3">
-                            <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <div style="height: 350px;" class="pb-5 mb-4 ">
+                            <div class="product-item owl-item position-relative bg-light d-flex flex-column text-center">
                                 <img class="img-fluid mb-4 w-100" src="img/product/${food.productId}.jpg" alt="">
                                 <h6 class="text-uppercase">${food.productName}</h6>
                                 <h5 class="text-primary mb-0">${food.getPriceString()}</h5>

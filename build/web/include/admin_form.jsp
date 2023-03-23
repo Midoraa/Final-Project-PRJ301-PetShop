@@ -8,9 +8,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 
- <c:if test="${!sessionScope.user.userRole.equals('admin')}">
-     <% response.sendRedirect("index.jsp"); %>
-                                </c:if>
+<c:if test="${!sessionScope.user.userRole.equals('admin')}">
+    <% response.sendRedirect("index.jsp");%>
+</c:if>
 <jsp:useBean class="model.repository.AdminRepository" scope="page" id="show"></jsp:useBean>
 
     <div class="container-fluid pt-5 ">
@@ -193,7 +193,7 @@
                                 <td>${i.productPrice}</td>
                                 <td>${i.productAmount}</td>
                                 <td><img class="w-25" src="img/product/${i.productId}.jpg" alt=""></td>
-                                <td><a class="btn btn-primary m-0" href="#">Update</a></td>
+                                <td><button class="btn btn-primary m-0" href="#" data-bs-toggle="modal" data-bs-target="#updateFood">Update</button></td>
                                 <td><a class="btn btn-danger m-0" onclick="deletePro('${i.productId}')">Delete</a></td>
                             </tr>
 
@@ -206,6 +206,46 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
+        </div>
+    </div>
+</div>
+<!--Update Food-->
+<div class="modal fade" id="updateFood" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Food</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="updateFood" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+                    <div class="mb-3">
+                        <label for="fname" class="col-form-label">Food Name:</label>
+                        <input type="text" class="form-control" id="fname" name="productName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ftype" class="col-form-label">Food Type:</label>
+                        <input type="text" class="form-control" id="ftype" name="productType">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fprice" class="col-form-label">Food Price:</label>
+                        <input type="text" class="form-control" id="fprice" name="productPrice">
+                    </div>
+                    <div class="mb-3">
+                        <label for="famount" class="col-form-label">Food Amount:</label>
+                        <input type="text" class="form-control" id="famount" name="productAmount">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fpic" class="col-form-label">Food Picture:</label>
+                        <input type="file" class="form-control" id="fpic" name="file">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
 </div>
@@ -246,7 +286,7 @@
                                 <td>${i.productPrice}</td>
                                 <td>${i.productAmount}</td>
                                 <td><img class="w-25" src="img/product/${i.productId}.jpg" alt=""></td>
-                                <td><a class="btn btn-primary m-0" href="#">Update</a></td>
+                                <td><button class="btn btn-primary m-0" href="#" data-bs-toggle="modal" data-bs-target="#updatePet">Update</button></td>
                                 <td><a class="btn btn-danger m-0" onclick="deletePro('${i.productId}')">Delete</a></td>
                             </tr>
 
@@ -262,6 +302,52 @@
         </div>
     </div>
 </div>
+<!--update Pet-->
+
+<div class="modal fade" id="updatePet" tabindex="-1" aria-labelledby="updatePet" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Pet</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="updatePet" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+                    <div class="mb-3">
+                        <label for="name" class="col-form-label">Pet Name:</label>
+                        <input type="text" class="form-control" id="name" name="productName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="color" class="col-form-label">Pet Color:</label>
+                        <input type="text" class="form-control" id="color" name="petColor">
+                    </div>
+                    <div class="mb-3">
+                        <label for="type" class="col-form-label">Pet Type:</label>
+                        <input type="text" class="form-control" id="type" name="productType">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="col-form-label">Pet Price:</label>
+                        <input type="text" class="form-control" id="price" name="productPrice">
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount" class="col-form-label">Pet Amount:</label>
+                        <input type="text" class="form-control" id="amount" name="productAmount">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pic" class="col-form-label">Pet Picture:</label>
+                        <input type="file" class="form-control" id="pic" name="file">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <!-- ----------Duyệt đơn hàng--------- -->
 <button type="button" class="btn btn-primary m-2 col-md-2" data-bs-toggle="modal" data-bs-target="#accept">
     Order Accept
@@ -299,7 +385,7 @@
                             </tr>
                         </c:forEach>
 
-                        
+
                     </tbody>
                 </table>
 
@@ -342,9 +428,9 @@
         width: 250px !important;
     }
 </style>
-    <script>
-        function deletePro(id){
-            $.ajax({
+<script>
+    function deletePro(id) {
+        $.ajax({
             url: '/pet-shop/removeproduct',
             type: 'GET',
             data: {
@@ -354,8 +440,8 @@
                 document.getElementById("row" + id).remove();
             }
         });
-        }
-    </script>
+    }
+</script>
 <!-- JavaScript Libraries 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

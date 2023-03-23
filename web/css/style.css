@@ -1,10 +1,10 @@
 /********** Template CSS **********/
-/*:root {
+:root {
     --primary: #7AB730;
     --secondary: #FFD33C;
     --light: #F3F3F3;
     --dark: #212121;
-}*/
+}
 
 [class^=flaticon-]:before,
 [class*=" flaticon-"]:before,
@@ -270,7 +270,7 @@
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    background: var(--primary);
+    background-color: #7AB730  !important;
     font-size: 22px;
     transition: .5s;
 }

@@ -14,12 +14,12 @@
                     <h1 class="text-uppercase text-white mb-lg-4">Make Your Pets Happy</h1>
                     <p class="fs-4 text-white mb-lg-4">Chuỗi cửa hàng thú cưng với chất lượng và uy tín hàng đầu miền Trung. Chuyên cung cấp dịch vụ và các sản phẩm đồ ăn cho thú cưng của bạn</p>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="" class="btn btn-outline-light border-2 py-md-3 px-md-5 me-5">Read More</a>
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                        <a href="" class="btn border-2 py-md-3 px-md-5 me-5 btn-primary">Read More</a>
+                        <button type="button" class="btn-play btn-primary btn" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/watch?v=xMz3P4_kYFM" data-bs-target="#videoModal">
                             <span></span>
                         </button>
-                        <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Play Video</h5>
+                        <h5 class="font-weight-normal text-primary m-0 ms-4 d-none d-sm-block">Play Video</h5>
                     </div>
                 </div>
             </div>
@@ -177,8 +177,8 @@
             <div class="owl-carousel product-carousel">
                 <%-- o day ne--%>
                 <c:forEach var="food" items="${listFood}">
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                <div  style="height: 350px;" class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center owl-item ">
                         <img class="img-fluid mb-4" src="img/product/${food.productId}.jpg" alt="">
                         <h6 class="text-uppercase">${food.productName}</h6>
                         <h5 class="text-primary mb-0">${food.getPriceString()}</h5>

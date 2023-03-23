@@ -17,8 +17,8 @@
                     <div class="service-item bg-light d-flex p-4">
                         <i class="flaticon-house display-1 text-primary me-4"></i>
                         <div>
-                            <h5 class="text-uppercase mb-3">Pet Boarding</h5>
-                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <h5 class="text-uppercase mb-3">Trông giữ thú cưng</h5>
+                            <p>Chăm sóc và trông giữ thú cưng của bạn khi bạn có việc bận</p>
                             <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -27,8 +27,8 @@
                     <div class="service-item bg-light d-flex p-4">
                         <i class="flaticon-food display-1 text-primary me-4"></i>
                         <div>
-                            <h5 class="text-uppercase mb-3">Pet Feeding</h5>
-                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <h5 class="text-uppercase mb-3">Cho thú cưng ăn</h5>
+                            <p>Nhận làm công thức thức ăn dành riêng cho thú cưng của bạn</p>
                             <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -37,8 +37,8 @@
                     <div class="service-item bg-light d-flex p-4">
                         <i class="flaticon-grooming display-1 text-primary me-4"></i>
                         <div>
-                            <h5 class="text-uppercase mb-3">Pet Grooming</h5>
-                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <h5 class="text-uppercase mb-3">Cắt tỉa lông</h5>
+                            <p>Chăm sóc ngoài hình và chải chuốt lông cho thú cưng của bạn</p>
                             <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -47,8 +47,8 @@
                     <div class="service-item bg-light d-flex p-4">
                         <i class="flaticon-cat display-1 text-primary me-4"></i>
                         <div>
-                            <h5 class="text-uppercase mb-3">Pet Training</h5>
-                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <h5 class="text-uppercase mb-3">Huấn luyện thú cưng</h5>
+                            <p>Giúp thú cưng của bạn đi vệ sinh đúng chỗ,ăn ngủ đúng giờ giấc,thực hiện theo mệnh lệnh</p>
                             <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -57,8 +57,8 @@
                     <div class="service-item bg-light d-flex p-4">
                         <i class="flaticon-dog display-1 text-primary me-4"></i>
                         <div>
-                            <h5 class="text-uppercase mb-3">Pet Exercise</h5>
-                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <h5 class="text-uppercase mb-3">Chụp hình cho thú cưng</h5>
+                            <p>Giúp bạn lưu giữ những hình ảnh và kỷ niệm với thú cưng của bạn</p>
                             <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -67,8 +67,8 @@
                     <div class="service-item bg-light d-flex p-4">
                         <i class="flaticon-vaccine display-1 text-primary me-4"></i>
                         <div>
-                            <h5 class="text-uppercase mb-3">Pet Treatment</h5>
-                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <h5 class="text-uppercase mb-3">Chăm sóc sức khỏe</h5>
+                            <p>Tiêm phòng và chữa trị các loại bệnh phổ biến mà thú cưng thường mắc phải</p>
                             <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
     <!-- Services End -->
 
 
-    <!-- Testimonial Start -->
+     <!-- Testimonial Start -->
     <div class="container-fluid bg-testimonial py-5" style="margin: 45px 0;">
         <div class="container py-5">
             <div class="row justify-content-end">
@@ -92,10 +92,10 @@
                                     <i class="bi bi-chat-square-quote text-primary"></i>
                                 </div>
                             </div>
-                            <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <p>Tôi rất hài lòng với dịch vụ của cửa hàng thú cưng này. Khi đến đây, tôi luôn được đón tiếp nhiệt tình và thân thiện bởi nhân viên của cửa hàng. Họ rất chuyên nghiệp và luôn tư vấn cho tôi những sản phẩm và dịch vụ phù hợp với thú cưng của tôi</p>
                             <hr class="w-25 mx-auto">
-                            <h5 class="text-uppercase">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="text-uppercase">Nguyễn Ngọc Nhân</h5>
+                            <span>Khách hàng</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-4">
@@ -104,10 +104,10 @@
                                     <i class="bi bi-chat-square-quote text-primary"></i>
                                 </div>
                             </div>
-                            <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <p> Tôi hoàn toàn tin tưởng vào sản phẩm và dịch vụ của cửa hàng này, vì chúng tôi đã cùng nhau trải qua nhiều năm và thấy rõ sự chăm sóc đặc biệt và tình cảm mà nhân viên dành cho thú cưng của tôi. Tôi chắc chắn sẽ tiếp tục đến đây để mua sắm và chăm sóc cho thú cưng của mình.</p>
                             <hr class="w-25 mx-auto">
-                            <h5 class="text-uppercase">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="text-uppercase">Nguyễn Phước Minh Hiếu</h5>
+                            <span>Khách hàng</span>
                         </div>
                     </div>
                 </div>

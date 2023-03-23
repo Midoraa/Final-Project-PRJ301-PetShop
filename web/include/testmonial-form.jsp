@@ -6,8 +6,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!-- Testimonial Start -->
-    <div class="container-fluid bg-testimonial py-5" style="margin: 90px 0;">
+ <!-- Testimonial Start -->
+    <div class="container-fluid bg-testimonial py-5" style="margin: 45px 0;">
         <div class="container py-5">
             <div class="row justify-content-end">
                 <div class="col-lg-7">
@@ -19,10 +19,10 @@
                                     <i class="bi bi-chat-square-quote text-primary"></i>
                                 </div>
                             </div>
-                            <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <p>Tôi rất hài lòng với dịch vụ của cửa hàng thú cưng này. Khi đến đây, tôi luôn được đón tiếp nhiệt tình và thân thiện bởi nhân viên của cửa hàng. Họ rất chuyên nghiệp và luôn tư vấn cho tôi những sản phẩm và dịch vụ phù hợp với thú cưng của tôi</p>
                             <hr class="w-25 mx-auto">
-                            <h5 class="text-uppercase">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="text-uppercase">Nguyễn Ngọc Nhân</h5>
+                            <span>Khách hàng</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-4">
@@ -31,10 +31,10 @@
                                     <i class="bi bi-chat-square-quote text-primary"></i>
                                 </div>
                             </div>
-                            <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <p> Tôi hoàn toàn tin tưởng vào sản phẩm và dịch vụ của cửa hàng này, vì chúng tôi đã cùng nhau trải qua nhiều năm và thấy rõ sự chăm sóc đặc biệt và tình cảm mà nhân viên dành cho thú cưng của tôi. Tôi chắc chắn sẽ tiếp tục đến đây để mua sắm và chăm sóc cho thú cưng của mình.</p>
                             <hr class="w-25 mx-auto">
-                            <h5 class="text-uppercase">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="text-uppercase">Nguyễn Phước Minh Hiếu</h5>
+                            <span>Khách hàng</span>
                         </div>
                     </div>
                 </div>

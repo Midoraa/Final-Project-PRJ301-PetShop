@@ -19,10 +19,24 @@
                     <h6 class="text-primary text-uppercase">Pets</h6>
                     <h1 class="display-5 text-uppercase mb-0">A FRIEND FOR YOUR LIFE</h1>
                 </div>
-                <div class="row g-5 d-flex flex-row">
+
+
+                <div class=" ">
+                    <form class="" action="pet" method="get">
+
+                        <select style="padding: 8px; border-radius: 10px; outline: none" class="input-group w-25 mt-5 " name="type">
+                            <option class="" value="all">All</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option> 
+                        </select>
+                        <input class="btn btn-primary h5 m-2" type="submit" value="Filter">
+                    </form>
+                </div>
+
+                <div class="owl-carousel product-carousel row g-5 d-flex flex-row">
                     <c:forEach var="pet" items="${listPet}">
-                        <div class="pb-5 col-md-3">
-                            <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <div style="height: 350px;" class="pb-5 d-flex">
+                            <div class="product-item owl-item position-relative bg-light d-flex flex-column text-center">
                                 <img class="img-fluid mb-4 w-100" src="img/product/${pet.productId}.jpg" alt="">
                                 <h6 class="text-uppercase">${pet.productName}</h6>
                                 <h5 class="text-primary mb-0">${pet.getPriceString()}</h5>
@@ -36,10 +50,10 @@
                 </div>
             </div>
         </div>
-          
-    
-<%--       <div>
-            ${pet.productId}
+
+
+        <%--       <div>
+                    ${pet.productId}
 
             ${pet.productName}
             ${pet.productType}
@@ -47,6 +61,6 @@
             ${pet.productAmount}
             ${pet.petColor}
         </div>
---%>
+        --%>
     </body>
 </html>
