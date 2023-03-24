@@ -310,7 +310,39 @@ public class AdminRepository {
         }
         return list;
     }
-
+public static void updateFood(Food food) {
+        try {
+            Connection con = DBConnect.getConnection();
+            String query = " update tblFood set  FoodName=?,FoodType=?, FoodPrice=? ,FoodAmount =? where FoodID=?";
+            PreparedStatement stmt = con.prepareStatement(query);
+            stmt.setString(1, food.getProductName());
+            stmt.setString(2, food.getProductType());
+            stmt.setDouble(3, food.getProductPrice());
+            stmt.setInt(4, food.getProductAmount());
+            stmt.setString(5,food.getProductId());
+            stmt.executeUpdate();
+            con.close();
+        } catch (Exception e) {
+            System.out.println("Loi method updateFood(Food food) trong AdminRepository.java");
+        }
+    }
+public static void updatePet(Pet pet) {
+        try {
+            Connection con = DBConnect.getConnection();
+            String query = " update tblPet set PetName=?,PetColor=? ,PetType=?,PetPrice =?,PetAmount=?   where PetID=?";
+            PreparedStatement stmt = con.prepareStatement(query);
+            stmt.setString(1, pet.getProductName());
+            stmt.setString(2, pet.getPetColor());
+            stmt.setString(3, pet.getProductType());
+            stmt.setDouble(4, pet.getProductPrice());
+            stmt.setInt(5, pet.getProductAmount());
+            stmt.setString(6,pet.getProductId());
+            stmt.executeUpdate();
+            con.close();
+        } catch (Exception e) {
+            System.out.println("Loi method updateFood(Food food) trong AdminRepository.java");
+        }
+    }
     public static void main(String[] args) {
         ArrayList<StatisticAge> listPet = AdminRepository.getAllOrderMonth();
         for (StatisticAge pet : listPet) {

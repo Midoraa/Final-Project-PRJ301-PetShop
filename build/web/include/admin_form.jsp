@@ -193,7 +193,7 @@
                                 <td>${i.productPrice}</td>
                                 <td>${i.productAmount}</td>
                                 <td><img class="w-25" src="img/product/${i.productId}.jpg" alt=""></td>
-                                <td><button class="btn btn-primary m-0" href="#" data-bs-toggle="modal" data-bs-target="#updateFood">Update</button></td>
+                                <td><button class="btn btn-primary m-0" onclick="setID('${i.productId}')" data-bs-toggle="modal" data-bs-target="#updateFood">Update</button></td>
                                 <td><a class="btn btn-danger m-0" onclick="deletePro('${i.productId}')">Delete</a></td>
                             </tr>
 
@@ -218,30 +218,28 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="updateFood" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+                <form action="updateFood" method="post" >
+
                     <div class="mb-3">
-                        <label for="fname" class="col-form-label">Food Name:</label>
-                        <input type="text" class="form-control" id="fname" name="productName">
+                        <label for="foodname" class="col-form-label">Food Name:</label>
+                        <input type="text" class="form-control" id="foodname" name="productName">
                     </div>
                     <div class="mb-3">
                         <label for="ftype" class="col-form-label">Food Type:</label>
-                        <input type="text" class="form-control" id="ftype" name="productType">
+                        <input type="text" class="form-control" id="foodtype" name="productType">
                     </div>
                     <div class="mb-3">
                         <label for="fprice" class="col-form-label">Food Price:</label>
-                        <input type="text" class="form-control" id="fprice" name="productPrice">
+                        <input type="text" class="form-control" id="foodprice" name="productPrice">
                     </div>
                     <div class="mb-3">
                         <label for="famount" class="col-form-label">Food Amount:</label>
-                        <input type="text" class="form-control" id="famount" name="productAmount">
+                        <input type="text" class="form-control" id="foodamount" name="productAmount">
                     </div>
-                    <div class="mb-3">
-                        <label for="fpic" class="col-form-label">Food Picture:</label>
-                        <input type="file" class="form-control" id="fpic" name="file">
-                    </div>
+
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="updateFood()">Update</button>
                     </div>
                 </form>
             </div>
@@ -286,7 +284,7 @@
                                 <td>${i.productPrice}</td>
                                 <td>${i.productAmount}</td>
                                 <td><img class="w-25" src="img/product/${i.productId}.jpg" alt=""></td>
-                                <td><button class="btn btn-primary m-0" href="#" data-bs-toggle="modal" data-bs-target="#updatePet">Update</button></td>
+                                <td><button class="btn btn-primary m-0" onclick="setID('${i.productId}')" data-bs-toggle="modal" data-bs-target="#updatePet">Update</button></td>
                                 <td><a class="btn btn-danger m-0" onclick="deletePro('${i.productId}')">Delete</a></td>
                             </tr>
 
@@ -312,34 +310,31 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="updatePet" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+                <form action="updatepet" method="post" >
                     <div class="mb-3">
                         <label for="name" class="col-form-label">Pet Name:</label>
-                        <input type="text" class="form-control" id="name" name="productName">
+                        <input type="text" class="form-control" id="petname" name="productName">
                     </div>
                     <div class="mb-3">
                         <label for="color" class="col-form-label">Pet Color:</label>
-                        <input type="text" class="form-control" id="color" name="petColor">
+                        <input type="text" class="form-control" id="petcolor" name="petColor">
                     </div>
                     <div class="mb-3">
                         <label for="type" class="col-form-label">Pet Type:</label>
-                        <input type="text" class="form-control" id="type" name="productType">
+                        <input type="text" class="form-control" id="pettype" name="productType">
                     </div>
                     <div class="mb-3">
                         <label for="price" class="col-form-label">Pet Price:</label>
-                        <input type="text" class="form-control" id="price" name="productPrice">
+                        <input type="text" class="form-control" id="petprice" name="productPrice">
                     </div>
                     <div class="mb-3">
                         <label for="amount" class="col-form-label">Pet Amount:</label>
-                        <input type="text" class="form-control" id="amount" name="productAmount">
+                        <input type="text" class="form-control" id="petamount" name="productAmount">
                     </div>
-                    <div class="mb-3">
-                        <label for="pic" class="col-form-label">Pet Picture:</label>
-                        <input type="file" class="form-control" id="pic" name="file">
-                    </div>
+                   
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="updatePet()">Update</button>
                     </div>
                 </form>
             </div>
@@ -429,15 +424,59 @@
     }
 </style>
 <script>
+    var id = "dfd";
+    function setID(newID) {
+        id = newID;
+        console.log(id);
+    }
     function deletePro(id) {
         $.ajax({
             url: '/pet-shop/removeproduct',
             type: 'GET',
             data: {
-                id: id,
+                id: id
             },
             success: function (data) {
                 document.getElementById("row" + id).remove();
+            }
+        });
+    }
+    function updateFood() {
+        console.log(id);
+        console.log(document.getElementById("foodname").value);
+        console.log(document.getElementById("foodtype").value);
+        console.log(document.getElementById("foodprice").value);
+        console.log(document.getElementById("foodamount").value);
+        $.ajax({
+            url: '/pet-shop/updatefood',
+            type: 'POST',
+            data: {
+                id: id,
+                name: document.getElementById("foodname").value,
+                type: document.getElementById("foodtype").value,
+                price: document.getElementById("foodprice").value,
+                amount: document.getElementById("foodamount").value
+            }
+        });
+    }
+    function updatePet() {
+        console.log(id);
+        console.log(document.getElementById("petname").value);
+        console.log(document.getElementById("pettype").value);
+        console.log(document.getElementById("petprice").value);
+        console.log(document.getElementById("petamount").value);
+        console.log(document.getElementById("petcolor").value);
+       $.ajax({
+            url: '/pet-shop/updatepet',
+            type: 'POST',
+            data: {
+                id: id,
+                name: document.getElementById("petname").value,
+                color: document.getElementById("petcolor").value,
+                type: document.getElementById("pettype").value,
+                price: document.getElementById("petprice").value,
+                amount: document.getElementById("petamount").value,
+                
             }
         });
     }
