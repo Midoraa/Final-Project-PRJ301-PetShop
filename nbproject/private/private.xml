@@ -3,22 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/pet.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/include/admin_form.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/include/detail-form.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/include/service-form.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/include/food_form.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/product.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/testmonial.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/food.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/css/style.css</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/include/header.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/index.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/admin.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/service.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/include/pet_form.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/include/testmonial-form.jsp</file>
-            <file>file:/D:/NetBeans%20Projects/PetShop/Final-Project-PRJ301-PetShop/web/include/cart-form.jsp</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/include/product-detail-form.jsp</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/RemoveProduct.java</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/UpdateFoodServlet.java</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/include/admin_form.jsp</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/model/entity/Food.java</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/include/detail-form.jsp</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/model/repository/AdminRepository.java</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/UpdatePetServlet.java</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/model/entity/Pet.java</file>
         </group>
     </open-files>
 </project-private>

@@ -226,7 +226,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="ftype" class="col-form-label">Food Type:</label>
-                        <input type="text" class="form-control" id="foodtype" name="productType">
+                        <select name="productType" id="foodtype" class="form-control">
+                            <option value="dogFood">Thức ăn cho chó</option>
+                            <option value="catFood">Thức ăn cho mèo</option>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label for="fprice" class="col-form-label">Food Price:</label>
@@ -276,7 +279,7 @@
                     <tbody class="w-100">
 
                         <c:forEach items="${show.getAllPet()}" var="i" >
-                            <tr>
+                            <tr  id="row${i.productId}">
                                 <td>${i.productId}</td>
                                 <td>${i.productName}</td>
                                 <td>${i.petColor}</td>
@@ -321,7 +324,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="type" class="col-form-label">Pet Type:</label>
-                        <input type="text" class="form-control" id="pettype" name="productType">
+                        <select class="form-control" name="productType" id="pettype">
+                            <option value="dog">Chó</option>
+                            <option value="cat">Mèo</option>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label for="price" class="col-form-label">Pet Price:</label>
@@ -331,7 +337,7 @@
                         <label for="amount" class="col-form-label">Pet Amount:</label>
                         <input type="text" class="form-control" id="petamount" name="productAmount">
                     </div>
-                   
+
                     <div class="modal-footer">
                         <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary" onclick="updatePet()">Update</button>
@@ -441,6 +447,7 @@
             }
         });
     }
+
     function updateFood() {
         console.log(id);
         console.log(document.getElementById("foodname").value);
@@ -466,7 +473,7 @@
         console.log(document.getElementById("petprice").value);
         console.log(document.getElementById("petamount").value);
         console.log(document.getElementById("petcolor").value);
-       $.ajax({
+        $.ajax({
             url: '/pet-shop/updatepet',
             type: 'POST',
             data: {
@@ -476,7 +483,7 @@
                 type: document.getElementById("pettype").value,
                 price: document.getElementById("petprice").value,
                 amount: document.getElementById("petamount").value,
-                
+
             }
         });
     }

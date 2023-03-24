@@ -96,7 +96,7 @@
     }
 
     .add-sl {
-        background: url(https://etoy.vn/images/input-previou.png) no-repeat scroll center center #fffefe !important;
+        background: url(https://etoy.vn/images/input-next.png) no-repeat scroll center center #fffefe !important;
         height: 32px;
         width: 30px;
         border: 1;
@@ -105,7 +105,7 @@
     }
 
     .sub-sl {
-        background: url(https://etoy.vn/images/input-next.png) no-repeat scroll center center #fffefe !important;
+        background: url(https://etoy.vn/images/input-previou.png) no-repeat scroll center center #fffefe !important;
         float: left;
         height: 32px;
         margin: 0;
@@ -134,7 +134,7 @@
             <h6>Thương hiệu: <a href="">Rlex</a></h6>
             <div class="d-flex">
                 <h4 class="mb-3 pb-3">đ</h4>
-                 <h1>${product.getPriceString()}</h1>
+                <h1>${product.getPriceString()}</h1>
             </div>
             <div class="d-flex">
                 <h6 class="align-self-center mb-0">Đánh giá sản phẩm: </h6>
@@ -184,7 +184,7 @@
                         <input name ="id" type = "text" hidden="" value = "${product.productId}">
                         <input class="btn btn-primary" type="submit" value="Thêm vào giỏ hàng">
                     </div>
-                        <h3>${message}</h3>
+                    <h3>${message}</h3>
                 </div>
             </form>
         </div>
