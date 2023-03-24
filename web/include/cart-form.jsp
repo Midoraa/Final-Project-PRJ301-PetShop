@@ -275,7 +275,7 @@
                                     <h2>Grand Total<span>${sessionScope.cart.getThanhTienString(30000)}</span></h2>
                                 </div>
                                 <div class="cart-btn">
-                                    <button>Update Cart</button>
+                                    <!--<button>Update Cart</button>-->
                                     <form action = "makeoder">
                                         <button type = "submit">Checkout</button>
                                     </form>

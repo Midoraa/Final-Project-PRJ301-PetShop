@@ -34,10 +34,14 @@ public class makeOrderServlet extends HttpServlet {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
         Cart cart = (Cart) session.getAttribute("cart");
-        String orderId = OrderRepository.createOrder(cart,user);
-        cart.removeAll();
-        request.getRequestDispatcher("getordereddetail?orderId="+orderId).forward(request, response);
-        
+        if (!cart.getCart().isEmpty()) {
+            String orderId = OrderRepository.createOrder(cart, user);
+            cart.removeAll();
+            request.getRequestDispatcher("getordereddetail?orderId=" + orderId).forward(request, response);
+        } else {
+            response.sendRedirect("cart.jsp");
+        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

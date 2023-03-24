@@ -85,7 +85,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="ftype" class="col-form-label">Food Type:</label>
-                        <input type="text" class="form-control" id="ftype" name="productType">
+                        <select  class="form-control" id="ftype" name="productType">
+                            <option value="dogFood"> Thức ăn cho chó</option>
+                            <option value="catFood">Thức ăn cho mèo</option>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label for="fprice" class="col-form-label">Food Price:</label>
@@ -133,7 +136,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="type" class="col-form-label">Pet Type:</label>
-                        <input type="text" class="form-control" id="type" name="productType">
+                        <select class="form-control" id="type" name="productType">
+                            <option value="dog">Chó</option>
+                            <option value="cat">Mèo</option>
+                            
+                        </select> 
                     </div>
                     <div class="mb-3">
                         <label for="price" class="col-form-label">Pet Price:</label>

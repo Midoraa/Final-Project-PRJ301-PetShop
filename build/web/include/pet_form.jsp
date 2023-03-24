@@ -32,7 +32,8 @@
                         <input class="btn btn-primary h5 m-2" type="submit" value="Filter">
                     </form>
                 </div>
-
+                    
+                <br>
                 <div class="owl-carousel product-carousel row g-5 d-flex flex-row">
                     <c:forEach var="pet" items="${listPet}">
                         <div style="height: 350px;" class="pb-5 d-flex">

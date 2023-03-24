@@ -3,15 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/UpdateFoodServlet.java</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/cart.jsp</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/include/admin_form.jsp</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/GetOrderedDetailServlet.java</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/makeOrderServlet.java</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/include/cart-form.jsp</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/model/entity/Pet.java</file>
             <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/include/product-detail-form.jsp</file>
             <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/RemoveProduct.java</file>
-            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/UpdateFoodServlet.java</file>
-            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/include/admin_form.jsp</file>
+            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/product-detail.jsp</file>
             <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/model/entity/Food.java</file>
             <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/web/include/detail-form.jsp</file>
             <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/model/repository/AdminRepository.java</file>
             <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/controller/UpdatePetServlet.java</file>
-            <file>file:/D:/PRJ-java%20web/PETSHOP/form/Final-Project-PRJ301-PetShop/src/java/model/entity/Pet.java</file>
         </group>
     </open-files>
 </project-private>
